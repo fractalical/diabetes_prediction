@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diabetes Prediction Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        form {
+            width: 100%;
+            max-width: 400px;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Diabetes Prediction Form</h1>
+        <form method="post" action="/">
+            <label for="Pregnancies">Pregnancies: Number of times pregnant</label><br>
+            <input type="number" id="Pregnancies" name="Pregnancies" required><br><br>
+
+            <label for="PlasmaGlucose">Plasma Glucose Concentration</label><br>
+            <input type="number" id="PlasmaGlucose" name="PlasmaGlucose" step="any" required><br><br>
+
+            <label for="DiastolicBloodPressure">Diastolic Blood Pressure (mm Hg)</label><br>
+            <input type="number" id="DiastolicBloodPressure" name="DiastolicBloodPressure" step="any" required><br><br>
+
+            <label for="TricepsThickness">Triceps Skin Fold Thickness (mm)</label><br>
+            <input type="number" id="TricepsThickness" name="TricepsThickness" step="any" required><br><br>
+
+            <label for="SerumInsulin">2-Hour Serum Insulin (mu U/ml)</label><br>
+            <input type="number" id="SerumInsulin" name="SerumInsulin" step="any" required><br><br>
+
+            <label for="BMI">Body Mass Index (weight in kg/(height in m)^2)</label><br>
+            <input type="number" id="BMI" name="BMI" step="any" required><br><br>
+
+            <label for="DiabetesPedigree">Diabetes Pedigree</label><br>
+            <input type="number" id="DiabetesPedigree" name="DiabetesPedigree" step="any" required><br><br>
+
+            <label for="Age">Age in years</label><br>
+            <input type="number" id="Age" name="Age" required><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
