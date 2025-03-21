@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Form Styling */
+form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(43, 43, 43);
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.9;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #00b8ff;
+    box-shadow: 0 0 5px rgba(0, 184, 255, 0.5);
+    outline: none;
+}
+
+.form-label {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+/* Heading */
+.diabetes_heading {
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #00b8ff;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+.btn-primary {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #00b8ff;
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: hsl(197, 96%, 60%);
+}
+
+.btn_center {
+    text-align: center;
+}
+/* Modal Styles */
+.modal-title {
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.modal-footer {
+    justify-content: center !important;
+}
+
+.bg-success1 {
+    background-color: #41c155 !important;
+}
+
+/* Success and Danger Messages */
+.diabetes_success{
+    font-size: 19px;
+    color: #41c155;
+    font-weight: 600;
+}
+.diabetes_footer_success {
+    font-size: 18px;
+    color: #41c155;
+    font-weight: 400;
+}
+
+.diabetes_danger{
+    font-size: 19px;
+    color: red;
+    font-weight: 600;
+}
+.diabetes_footer_danger {
+    font-size: 18px;
+    color: red;
+    font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    form {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .diabetes_heading {
+        font-size: 30px;
+    }
+
+    .modal-title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .diabetes_heading,
+    .modal-title {
+        font-size: 24px;
+    }
+}
