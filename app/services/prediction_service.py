@@ -9,12 +9,14 @@ class DiabetesPredictionService:
     
     def __init__(self):
         # We'll check if the model file exists, otherwise we'll create a simple model
-        model_path = os.path.join('storage', 'models', 'prediction_model.pkl')
+        model_path = os.path.join('storage', 'models', 'rfc_model.pkl')
+        print(f"Loading model from {model_path}")
         self._model = None
         
         try:
             if os.path.exists(model_path):
                 self._model = joblib.load(model_path)
+                print(f"Model loaded successfully: {self._model}")
         except Exception as e:
             print(f"Error loading model: {e}")
         
