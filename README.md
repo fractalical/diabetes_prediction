@@ -25,3 +25,21 @@ This project aims to predict the likelihood of diabetes in women based on key he
 ./models - package for ml models training
 
 ./storage - directory for ml models
+
+## Results
+
+- RFC: accuracy=0.95, AUC=0.98
+- XGB: accuracy=0.96, AUC=0.99
+
+## Choosen model - XGB
+
+## How to start app
+```shell
+python3 -m venv venv
+source venv/bin/activate
+pip install -r app/requirements.txt
+uvicorn app.main:app --reload 
+```
+App will run on http://0.0.0.0:8000/
+
+Prediction page http://0.0.0.0:8000/prediction

@@ -9,7 +9,7 @@ class DiabetesPredictionService:
     
     def __init__(self):
         # We'll check if the model file exists, otherwise we'll create a simple model
-        model_path = os.path.join('storage', 'models', 'rfc_model.pkl')
+        model_path = os.path.join('storage', 'models', 'xgb_model.pkl')
         print(f"Loading model from {model_path}")
         self._model = None
         
